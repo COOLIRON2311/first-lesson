@@ -1,3 +1,5 @@
+*.pdb
+*.pcu
 *.exe
 bin
 \data\secret_key.txt
