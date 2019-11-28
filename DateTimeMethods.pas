@@ -1,6 +1,6 @@
 ﻿unit DateTimeMethods;
 
-function IsLeapYear(year: integer): boolean := year mod 4 = 0;
+function IsLeapYear(year: integer): boolean := ((year mod 4 = 0) and (year mod 100 <> 0)) and (year mod 400 <> 0);
 function DaysInMonth(month, year: integer): integer;
 begin
   case month of
