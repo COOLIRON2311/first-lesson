@@ -1,6 +1,6 @@
 ﻿unit DateTimeMethods;
 
-function IsLeapYear(year: integer): boolean := ((year mod 4 = 0) and (year mod 100 <> 0)) and (year mod 400 <> 0);
+function IsLeapYear(year: integer): boolean := DateTime.IsLeapYear(year); 
 function DaysInMonth(month, year: integer): integer;
 begin
   case month of
@@ -11,7 +11,7 @@ begin
 end;
 function LaterInDay(p1, p2: DateTime): DateTime := p1;
 function LaterInYear(p1, p2: DateTime): DateTime := p1 < p2 ? p1 : p2;
-function DaysInYear(year: integer): integer := 0;
+function DaysInYear(year: integer): integer := IsLeapYear(year) ? 366: 365;
 function DaysInYearRange(year1, year2: integer): integer := 0;
 function SecondsInHours(hours: integer): integer := 0;
 
