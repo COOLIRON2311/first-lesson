@@ -57,4 +57,5 @@ begin
 	TestDaysInMonth;
 	TestrLaterInYear;
 	TestDaysInYear;
+	TestDaysInYearRange;
 end.
