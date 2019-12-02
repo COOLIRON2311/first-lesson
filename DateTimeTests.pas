@@ -45,13 +45,6 @@ begin
 	assert(DaysInYearRange(2050, 2100) = 18627, 'TestDaysInYear fails on 2050..2100');
 end;
 
-procedure TestSecondsInHours();
-begin
-	assert(SecondsInHours(1) = 60*60, 'TestSecondsInHours fails on 1');
-	assert(SecondsInHours(2) = 2*60*60, 'TestSecondsInHours fails on 2');
-	assert(SecondsInHours(0) = 0, 'TestSecondsInHours fails on 0');
-end;
-
 begin
 	TestIsLeapYear;
 	TestDaysInMonth;
