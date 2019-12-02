@@ -58,4 +58,5 @@ begin
 	TestrLaterInYear;
 	TestDaysInYear;
 	TestDaysInYearRange;
+	TestSecondsInHours;
 end.
